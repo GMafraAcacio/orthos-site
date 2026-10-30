@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orthos Odontologia</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Figtree:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 100 110"><circle cx="26" cy="9" r="7" fill="currentColor"/><circle cx="76" cy="12" r="7" fill="currentColor"/><path d="M10 38c4-12 18-14 32-10 8 2 14 0 18-4 6-4 24-8 32 6 4 8 2 24-6 40l-8 14c-2-14-4-24 2-34 4-8-2-12-10-8-6 3-14 3-20 0-10-4-18 0-18 14 0 20 14 36 22 44-14-6-36-26-44-52z" fill="currentColor"/><circle cx="44" cy="62" r="5" fill="currentColor"/><path d="M30 78c8-8 20-10 36-6-12 2-20 6-28 14z" fill="currentColor"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Orthos Odontologia"><img src="img/logo.png" alt="Orthos Odontologia" height="48"></a>
+    <nav id="nav" aria-label="Principal"><ul>
+      <li><a href="#inicio">Início</a></li><li><a href="#servicos">Tratamentos</a></li><li><a href="#consultorio">Consultório</a></li><li><a href="#resultados">Resultados</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#contato">Contato</a></li>
+    </ul></nav>
+    <a class="btn btn-dark cta-h" href="#agendar">Agendar consulta</a>
+    <button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Sorrisos saudáveis<span>Vidas mais felizes.</span></h1>
+      <p class="l">Odontologia acolhedora para você e sua família, do check-up ao sorriso que você sempre quis.</p>
+      <div class="actions"><a class="btn btn-dark" href="#agendar">Agendar consulta →</a><a class="btn btn-out" href="#resultados">Ver resultados</a></div>
+      <ul class="trust">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Plano claro<br>antes de começar</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3.500 2.700-5.500 6-5.500s6 2 6 5.500M15.500 14c3 0 5.500 1.600 5.500 4.500"/></svg>Todas as<br>idades</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><use href="#tooth"/></svg>Seis áreas<br>de atuação</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <div class="visual">
+        <img src="img/hero.jpg" alt="Paciente sorrindo durante atendimento odontológico" style="object-position:40% 20%">
+      </div>
+      <div class="script">um sorriso novo<br>para você</div>
+      <form class="card" id="agendar" novalidate>
+        <h2>Agende sua consulta</h2>
+        <p>Continue pelo WhatsApp e confirmamos o melhor horário.</p>
+        <input id="nome" placeholder="Seu nome" autocomplete="name" aria-label="Seu nome">
+        <select id="trat" aria-label="Tratamento"></select>
+        <select id="per" aria-label="Período"><option>Manhã</option><option>Tarde</option><option>Tanto faz</option></select>
+        <button class="btn btn-dark" type="submit">Continuar no WhatsApp →</button>
+        <p class="msg" id="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="head"><div><h2>Nossos tratamentos</h2><p class="sub">Cuidado completo para cada sorriso. Toque para agendar.</p></div></div>
+    <div class="svc" id="svc"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap care">
+    <div class="panel">
+      <h2>Cuidado moderno, abordagem gentil.</h2>
+      <p>Explicamos cada etapa, respeitamos o seu tempo e planejamos o tratamento com você, para cada consulta ser tranquila.</p>
+      <a class="btn btn-dark" href="#agendar">Agendar consulta →</a>
+    </div>
+    <div class="room"><img src="img/sala-de-espera.jpg" alt="Sala de espera da Orthos Odontologia" style="object-position:50% 40%"></div>
+    <div class="quote">
+      <span class="q">“</span>
+      <div class="slides" id="slides">
+        <div class="sl on"><p>Tinha medo de dentista desde criança. Aqui me explicaram tudo e não senti nada.</p><cite>Paciente de limpeza e restauração</cite></div>
+        <div class="sl"><p>Levei meus dois filhos e eles saíram pedindo para voltar. Ótimo jeito com criança.</p><cite>Mãe de pacientes infantis</cite></div>
+        <div class="sl"><p>Fiz o clareamento e o aparelho, com acompanhamento próximo do começo ao fim.</p><cite>Paciente de ortodontia</cite></div>
+      </div>
+      <div class="nv"><button id="prev" aria-label="Anterior">←</button><i></i><i></i><i></i><button id="next" aria-label="Próximo">→</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="consultorio" style="padding-top:2rem">
+  <div class="wrap">
+    <h2>Conheça o consultório</h2>
+    <p class="sub">Um espaço pensado para você se sentir bem desde a chegada.</p>
+    <div class="gal"><figure><img src="img/entrada.jpg" alt="Corredor de entrada da clínica com letreiro Orthos" loading="lazy"><figcaption>Entrada</figcaption></figure><figure><img src="img/sala-de-espera.jpg" alt="Sala de espera com cadeiras brancas" loading="lazy"><figcaption>Sala de espera</figcaption></figure><figure><img src="img/espaco-infantil.jpg" alt="Painel colorido do espaço infantil" loading="lazy"><figcaption>Espaço infantil</figcaption></figure></div>
+  </div>
+</section>
+
+<section id="resultados" style="padding-top:2rem">
+  <div class="wrap">
+    <h2>Resultados que mudam o sorriso</h2>
+    <p class="sub">Casos atendidos na Orthos. Antes à esquerda, depois à direita.</p>
+    <div class="cases">
+      <article class="case"><h3>Ortodontia</h3><p>Correção de mordida cruzada anterior, apinhamento e fechamento de espaços.</p>
+        <div class="pair"><img src="img/ortodontia-antes.jpg" alt="Dentes antes do tratamento ortodôntico" loading="lazy"><img src="img/ortodontia-depois.jpg" alt="Dentes depois do tratamento ortodôntico" loading="lazy"></div></article>
+      <article class="case"><h3>Facetas em resina composta</h3><p>Substituição de resinas insatisfatórias, com novo formato e cor para um sorriso harmônico e natural.</p>
+        <div class="pair"><img src="img/facetas-antes.jpg" alt="Dentes antes das facetas em resina" loading="lazy"><img src="img/facetas-depois.jpg" alt="Dentes depois das facetas em resina" loading="lazy"></div></article>
+    </div>
+    <p class="note">Os resultados variam de paciente para paciente. Só uma avaliação indica o tratamento ideal para você.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap"><div class="stats">
+    <div><svg class="ic" viewBox="0 0 24 24"><use href="#tooth"/></svg><p style="margin:0"><b>6 áreas</b><span>de atuação</span></p></div>
+    <div><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.500 3 4 3s3-1 4-3M9 9.500h.01M15 9.500h.01"/></svg><p style="margin:0"><b>Todas as idades</b><span>de bebês a adultos</span></p></div>
+    <div><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><p style="margin:0"><b>Plano claro</b><span>antes de começar</span></p></div>
+    <div><svg class="ic" viewBox="0 0 24 24"><path d="M12 20s-7-4.500-7-10a4 4 0 017-2.500A4 4 0 0119 10c0 5.500-7 10-7 10z"/></svg><p style="margin:0"><b>Sorrisos saudáveis</b><span>futuros mais brilhantes</span></p></div>
+  </div></div>
+</section>
+
+<section id="duvidas" style="padding-top:0">
+  <div class="wrap"><h2 style="text-align:center">Dúvidas frequentes</h2>
+    <div class="faq">
+      <details><summary>A primeira consulta serve para quê?</summary><p>Para avaliar sua saúde bucal, ouvir suas queixas e montar um plano de tratamento com opções e valores.</p></details>
+      <details><summary>Vocês atendem crianças e bebês?</summary><p>Sim. Atendemos todas as idades, inclusive procedimentos como a frenectomia lingual em bebês.</p></details>
+      <details><summary>Como funciona o pagamento?</summary><p>As condições são apresentadas no plano de tratamento, antes de iniciar. Pergunte pelas formas disponíveis.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contato">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="img/logo.png" alt="Orthos Odontologia" height="48"></a>
+    <ul><li><a href="#servicos">Tratamentos</a></li><li><a href="#resultados">Resultados</a></li><li><a href="https://www.instagram.com/orthosortodontiacte/" target="_blank" rel="noopener">Instagram</a></li><li><a id="wl" href="#" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    <div class="r">Av. Santana, 266 · 1º andar · sala 101<br>(77) 99209-2836 · (77) 3454-2573<br>© <span id="y"></span> Orthos Odontologia</div>
+  </div>
+</footer>
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WA</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tooth" viewBox="0 0 24 24"><path d="M7 4c-2 0-3 2-3 4 0 3 1 4 2 8 .3 1.500 1.500 2 2 .5l1-3h2l1 3c.5 1.500 1.700 1 2-.5 1-4 2-5 2-8 0-2-1-4-3-4-1.500 0-2 1-3 1S8.500 4 7 4z"/></symbol></svg>
+<script>
+const WHATSAPP="5577992092836";
+const IC={
+ o:'<use href="#tooth"/><path d="M6 10h12"/>',
+ m:'<path d="M4 9c0 6 3.500 10 8 10s8-4 8-10"/><path d="M8 13h8"/>',
+ p:'<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+ e:'<path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>',
+ k:'<circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.500 3 4 3s3-1 4-3M9 9.500h.01M15 9.500h.01"/>',
+ c:'<rect x="4" y="4" width="16" height="16" rx="5"/><path d="M12 8v8M8 12h8"/>'
+};
+const S=[
+ ["Ortodontia","Aparelhos fixos e alinhadores invisíveis","o"],
+ ["Ortopedia dos maxilares","Aparelhos removíveis","m"],
+ ["Prevenção em saúde bucal","Profilaxia, restaurações e endodontia (canal)","p"],
+ ["Odontologia estética","Clareamento dental e facetas em resina","e"],
+ ["Odontopediatria","Frenectomia lingual em crianças e bebês","k"],
+ ["Cirurgia oral","Extrações com segurança e conforto","c"]
+];
+const svc=document.getElementById('svc'),sel=document.getElementById('trat');
+S.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.innerHTML='<span class="o"><svg class="ic" viewBox="0 0 24 24">'+IC[s[2]]+'</svg></span><b>'+s[0]+'</b><small>'+s[1]+'</small>';
+  b.onclick=()=>{sel.selectedIndex=i;document.getElementById('agendar').scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('nome').focus({preventScroll:true})};
+  svc.appendChild(b);sel.add(new Option(s[0],s[0]));
+});
+const hb=document.getElementById('menu'),nav=document.getElementById('nav');
+hb.onclick=()=>{const o=nav.classList.toggle('open');hb.setAttribute('aria-expanded',o)};
+nav.querySelectorAll('a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');hb.setAttribute('aria-expanded',false)});
+const sl=[...document.querySelectorAll('.sl')],dt=[...document.querySelectorAll('.nv i')];let c=0,tm;
+function go(i){c=(i+sl.length)%sl.length;sl.forEach((s,j)=>s.classList.toggle('on',j===c));dt.forEach((d,j)=>d.classList.toggle('on',j===c))}
+function rs(){clearInterval(tm);tm=setInterval(()=>go(c+1),6000)}
+document.getElementById('prev').onclick=()=>{go(c-1);rs()};document.getElementById('next').onclick=()=>{go(c+1);rs()};go(0);rs();
+document.getElementById('agendar').onsubmit=e=>{
+  e.preventDefault();const n=document.getElementById('nome').value.trim(),m=document.getElementById('msg');
+  if(!n){m.textContent='Digite seu nome para continuar.';document.getElementById('nome').focus();return}
+  const t='Olá! Meu nome é '+n+'. Quero agendar: '+sel.value+'. Melhor período: '+document.getElementById('per').value+'.';
+  m.textContent='Abrindo o WhatsApp…';
+  const a=document.createElement('a');a.href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(t);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+};
+['wa','wl'].forEach(i=>document.getElementById(i).href='https://wa.me/'+WHATSAPP);
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
